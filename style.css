@@ -1,0 +1,61 @@
+/* CSS to arrange labels and input fields side by side */
+.addvendor { 
+    margin: 50px ;
+    border: 2px solid black;
+    padding: 20px;  
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container2 {
+    flex: 0 0 calc(50% - 10px);
+}
+
+.container2 label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+p{
+    font-size: small;
+    color: red;
+}
+.container2 input, .container2 select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.required::after{
+    content: '*';
+    color: red;
+}
+
+.validate-cin, .submit-btn, .validate-ifsc{
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.reset-btn{
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.validate-cin:hover, .submit-btn:hover, .reset-btn:hover {
+    background-color: #0056b3;
+}
